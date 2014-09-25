@@ -4,7 +4,6 @@
  */
 
 var transform = require('transform-property');
-var has3d = require('has-translate3d');
 
 
 /**
@@ -37,13 +36,7 @@ function translate(el, x, y){
   if (!percentRegexp.test(y)) y += 'px';
 
   if (transform) {
-    if (has3d) {
-      el.style[transform] = 'translate3d(' + x + ', ' + y + ', 0)';
-    } else {
-      el.style[transform] = 'translate(' + x + ',' + y + ')';
-    }
-  } else {
-    el.style.left = x;
-    el.style.top = y;
+    el.style[transform] = 'translate3d(' + x + ', ' + y + ', 0)';
   }
+
 };

@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {
-    "has-translate3d": "*",
     "transform-property": "*"
   },
   "development": {},

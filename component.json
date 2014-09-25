@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {
-    "component/has-translate3d": "*",
     "component/transform-property": "*"
   },
   "development": {
