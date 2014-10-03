@@ -17,7 +17,7 @@ var percentRegexp = /%$/;
  * Expose `translate`.
  */
 
-module.exports = translate;
+module.exports = transform ? translate : function() {};
 
 
 /**
@@ -31,12 +31,8 @@ module.exports = translate;
 
 
 function translate(el, x, y){
-  
   if (!percentRegexp.test(x)) x += 'px';
   if (!percentRegexp.test(y)) y += 'px';
 
-  if (transform) {
-    el.style[transform] = 'translate3d(' + x + ', ' + y + ', 0)';
-  }
-
-};
+  el.style[transform] = 'translate3d(' + x + ', ' + y + ', 0)';
+}
