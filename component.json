@@ -1,6 +1,6 @@
 {
   "name": "translate",
-  "repo": "porada/translate",
+  "repo": "pilotcreative/translate",
   "description": "Hardware accelerated translations with fallback support",
   "version": "0.1.0",
   "keywords": [],
